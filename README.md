@@ -38,8 +38,7 @@ This information can be accessed through `setup.sh -h`.
 ```json
 "message": {
     "chat": {
-        "id": 12345678,
-        ...
+        "id": 12345678
     }
 }
 ```
