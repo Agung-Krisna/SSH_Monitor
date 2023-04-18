@@ -2,7 +2,7 @@
 
 if [ -n "$SSH_CLIENT" ]; then
     TEXT="IP \`$(echo $SSH_CLIENT | awk '{print $1}')\` logged into \`${USER}@$(hostnamectl --static)\`
-SSH Connection running on PID \`$(pgrep '^ssh$' -u ${USER})\`"
+SSH Connection running on PID \`$(pgrep '^ssh?d$' -u ${USER})\`"
 fi
 
 # send_text takes two parameter telegram bot id and telegram chat id  
